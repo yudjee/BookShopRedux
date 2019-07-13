@@ -1,0 +1,30 @@
+.menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.menu_right {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.menu_right_sum {
+	padding: 5px;
+}
+
+
+.menu_right_cart {
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.menu_right_cart:hover {
+	background-color: #efd4f9;
+}

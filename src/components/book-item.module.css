@@ -1,0 +1,30 @@
+.book_item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 2px solid black;
+	width: 30%;
+	margin: 10px;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background: #3da35a;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 0 5px rgb(56,100,38);
+  transition: all 0.5s;
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgb(56,100,38);
+}
+
+button:focus {
+  outline: none;
+}

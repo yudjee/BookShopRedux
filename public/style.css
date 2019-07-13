@@ -1,0 +1,12 @@
+.main {
+	display: flex;
+	justify-content: space-between;
+}
+
+.books_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 80%;
+}
+
