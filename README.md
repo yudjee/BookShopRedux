@@ -1,7 +1,7 @@
 React-redux project. 
 
 
-Functional: find book by author or title; sort by price and author name.
+Functional: find book by author or title; sort by price and author name. Add book and delete from shop cart.
 
 Technologys: React, Redux, Axios, Lodash.
 
