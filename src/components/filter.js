@@ -1,7 +1,7 @@
 import React from 'react';
 import FilterItem from './filter-item';
 import {connect} from 'react-redux';
-import {setBooks, setFilter, setSearch} from '../actions/books'
+import {setFilter, setSearch} from '../actions/books'
 
 import './filter.css'
 

@@ -2,18 +2,22 @@ import React from 'react';
 
 import s from './book-item.module.css'
 
-const bookItem = ({image, title, author, price, onAdd}) => (
+const bookItem = ({addToCart, book}) => {
 
-	<div className={s.book_item}>
-		<img src={ image } alt="book pic"/>
-		<div className={s.book_item_about}>
-			<div className={s.book_item_title}> {title} </div>
-			<div className={s.book_item_author}> {author} </div>
-		</div>
-		<div className={s.book_item_price}> {price} грн. </div>
-		<button onClick={onAdd}>Купить</button>
-	</div>
+	const {title, author, price} = book;
 	
-);
+	return (
+	<div className={s.book_item}>
+		<img src='./book.png' className={s.book_item_img} alt="book pic"/>
+		<div className={s.book_item_about}>
+			<div className={s.book_item_title}> <span className={s.book_text}>Название:</span> {title} </div>
+			<div className={s.book_item_author}> <span className={s.book_text}>Автор: </span> {author} </div>
+		</div>
+		<div className={s.book_item_price}> <span className={s.book_text}>Цена: </span> {price} грн. </div>
+		<br />
+		<button onClick={() => addToCart(book)}>Купить</button>
+	</div>
+	)
+};
 
 export default bookItem
